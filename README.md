@@ -19,7 +19,7 @@ application up and running.
  To Run the Project:
  
  * Copy the link and Clone it in your system.
-    Command for Cloning the Project : git clone THAT_LINK
+    Command for Cloning the Project : git clone https://github.com/Manjusathyam/ROR-TASK.git
 
  * cd project_name
  
