@@ -25,6 +25,14 @@ application up and running.
  
  * Run the Command => bundle install
  
+ To setup the Database:
+ 
+ * Run the command => rails db:create
+ 
+ To Migrate:
+ 
+ * Run the command => rails db:migrate
+ 
  To Run the Server:
    * Run the Command => rails s
    * It will Automatically take you to the Employees page => http://localhost:3000
