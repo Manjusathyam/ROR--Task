@@ -1,0 +1,37 @@
+<%= form_with(model: dept_manager) do |form| %>
+  <% if dept_manager.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(dept_manager.errors.count, "error") %> prohibited this dept_manager from being saved:</h2>
+
+      <ul>
+        <% dept_manager.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :dept_no, style: "display: block" %>
+    <%= form.number_field :dept_no %>
+  </div>
+
+  <div>
+    <%= form.label :emp_no, style: "display: block" %>
+    <%= form.number_field :emp_no %>
+  </div>
+
+  <div>
+    <%= form.label :from_date, style: "display: block" %>
+    <%= form.date_field :from_date %>
+  </div>
+
+  <div>
+    <%= form.label :to_date, style: "display: block" %>
+    <%= form.date_field :to_date %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

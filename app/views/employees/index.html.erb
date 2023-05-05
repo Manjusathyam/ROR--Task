@@ -1,0 +1,21 @@
+
+<p style="color: green"><%= notice %></p>
+
+<h1>Employees</h1>
+<b><%= link_to "Go to titles", titles_path %> ||</b>
+<b><%= link_to "Departments", departments_path %> ||</b>
+<b><%= link_to "Departments Employees", dept_emps_path %> ||</b>
+<b><%= link_to "Department Managers", dept_managers_path %> ||</b>
+<h2>List of Employees</h2>
+
+<b><%= link_to "Add New Employee", new_employee_path %></br></b>
+
+<div id="employees">
+  <% @employees.each do |employee| %>
+    <%= render employee %>
+    <p>
+      <%= link_to "View this employee", employee %>
+    </p>
+  <% end %>
+</div>
+
