@@ -27,7 +27,7 @@ application up and running.
  
  To Run the Server:
    * Run the Command => rails s
-   It will Automatically take you to the Employees page => http://localhost:3000
+   * It will Automatically take you to the Employees page => http://localhost:3000
    
    Url for the Pages:
     * http://localhost:3000
