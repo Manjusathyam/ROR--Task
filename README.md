@@ -3,23 +3,38 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+* Ruby version:
+    ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-linux]
 
-* System dependencies
+* Rails Version:
+    Rails 7.0.4.3
+    
+* postgres version:
+    psql (PostgreSQL) 14.7 (Ubuntu 14.7-0ubuntu0.22.04.1)
 
-* Configuration
+* Bundle version:
+    Bundler version 2.4.8
+    
+ To Run the Project:
+ 
+ * Copy the link and Clone it in your system.
+    Command for Cloning the Project : git clone THAT_LINK
 
-* Database creation
+ * cd project_name
+ 
+ * Run the Command => bundle install
+ 
+ To Run the Server:
+   * Run the Command => rails s
+   It will Automatically take you to the Employees page => http://localhost:3000
+   
+   Url for the Pages:
+    * http://localhost:3000
+    * http://localhost:3000/titles
+    * http://localhost:3000/departments
+    * http://localhost:3000/dept_emps
+    * http://localhost:3000/dept_managers
+    * http://localhost:3000/salaries
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # ROR-TASK
