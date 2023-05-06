@@ -46,3 +46,4 @@ application up and running.
     * http://localhost:3000/salaries
 
 # ROR-TASK
+# Sample
