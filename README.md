@@ -19,7 +19,7 @@ application up and running.
  To Run the Project:
  
  * Copy the link and Clone it in your system.
-    Command for Cloning the Project : git clone https://github.com/Manjusathyam/ROR-TASK.git
+    Command for Cloning the Project : git clone https://github.com/Manjusathyam/ROR--Task.git
 
  * cd project_name
  
@@ -45,6 +45,4 @@ application up and running.
     * http://localhost:3000/dept_managers
     * http://localhost:3000/salaries
 
-# ROR-TASK
-# Sample
 # ROR--Task
