@@ -10,28 +10,30 @@
       </ul>
     </div>
   <% end %>
-
-  <div>
-    <%= form.label :emp_no, style: "display: block" %>
-    <%= form.number_field :emp_no %>
+  <div class="form-layout mb-3 form-bg">
+  <div style="margin-bottom: -28px;">
+    <%= form.label :emp_no, style: "display: block",class:"form-label" %>
+    <%= form.number_field :emp_no,class:"form-control" %>
   </div>
 
-  <div>
-    <%= form.label :dept_no, style: "display: block" %>
-    <%= form.text_field :dept_no %>
+   <div style="margin-bottom: -28px;">
+    <%= form.label :dept_no, style: "display: block",class:"form-label" %>
+    <%= form.text_field :dept_no,class:"form-control" %>
   </div>
 
-  <div>
-    <%= form.label :from_date, style: "display: block" %>
-    <%= form.date_field :from_date %>
+   <div style="margin-bottom: -28px;">
+    <%= form.label :from_date, style: "display: block",class:"form-label" %>
+    <%= form.date_field :from_date,class:"form-control" %>
   </div>
 
-  <div>
-    <%= form.label :to_date, style: "display: block" %>
-    <%= form.date_field :to_date %>
+   <div style="margin-bottom: -28px;">
+    <%= form.label :to_date, style: "display: block",class:"form-label" %>
+    <%= form.date_field :to_date,class:"form-control" %>
   </div>
 
-  <div>
+ <div style="margin-bottom: -28px; margin-top:25px"  >
     <%= form.submit %>
+     <%= link_to "Back to dept emps", dept_emps_path,class:"btn btn-secondary btns" %>
+  </div>
   </div>
 <% end %>

@@ -1,10 +1,11 @@
 <p style="color: green"><%= notice %></p>
-
+<div style="background-color: bisque; width:500px; margin-left: 500px;" >
 <%= render @dept_emp %>
 
 <div>
-  <%= link_to "Edit this dept emp", edit_dept_emp_path(@dept_emp) %> |
-  <%= link_to "Back to dept emps", dept_emps_path %>
+  <%= link_to "Edit this dept emp", edit_dept_emp_path(@dept_emp),class:"btn btn-primary btns" %> |
+  <%= link_to "Back to dept emps", dept_emps_path,class:"btn btn-secondary btns" %>
 
-  <%= button_to "Destroy this dept emp", @dept_emp, method: :delete %>
+  <%= button_to "Destroy this dept emp", @dept_emp, method: :delete,class:"btn btn-danger btns" %>
+</div>
 </div>

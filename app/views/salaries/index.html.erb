@@ -1,14 +1,17 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Salaries</h1>
+<h1 style="text-align:center; color:navy;">Salaries</h1>
 
-<div id="salaries">
+<div id="titles" style="background-color: bisque; " >
   <% @salaries.each do |salary| %>
+     <div style="border-bottom: double;">
     <%= render salary %>
     <p>
-      <%= link_to "Show this salary", salary %>
+      <%= link_to "Show this salary", salary, class:"btn btn-secondary btns"  %>
     </p>
+    <div>
   <% end %>
 </div>
 
-<%= link_to "New salary", new_salary_path %>
+<%= link_to "New salary", new_salary_path, class:"btn btn-success btns"  %>
+<%= link_to "Back to employees", employees_path,class:"btn btn-secondary" %>

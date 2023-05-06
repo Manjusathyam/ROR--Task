@@ -1,14 +1,17 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Dept managers</h1>
+<h1 style="text-align:center; color:navy;">Dept managers</h1>
 
-<div id="dept_managers">
+<div id="dept_managers" style="background-color: bisque;" >
   <% @dept_managers.each do |dept_manager| %>
+   <div style="border-bottom: double;">
     <%= render dept_manager %>
     <p>
-      <%= link_to "Show this dept manager", dept_manager %>
+      <%= link_to "Show this dept manager", dept_manager,class:"btn btn-info" %>
     </p>
+    </div>
   <% end %>
-</div>
 
-<%= link_to "New dept manager", new_dept_manager_path %>
+
+<%= link_to "New dept manager", new_dept_manager_path,class:"btn btn-success"%>
+  <%= link_to "Back to employees", employees_path,class:"btn btn-secondary" %>

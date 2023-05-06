@@ -1,21 +1,27 @@
 
 <p style="color: green"><%= notice %></p>
 
-<h1>Employees</h1>
-<b><%= link_to "Go to titles", titles_path %> ||</b>
-<b><%= link_to "Departments", departments_path %> ||</b>
-<b><%= link_to "Departments Employees", dept_emps_path %> ||</b>
-<b><%= link_to "Department Managers", dept_managers_path %> ||</b>
-<h2>List of Employees</h2>
+<h1 style="text-align:center; color:navy; font-weight:bolder">Employees</h1>
 
-<b><%= link_to "Add New Employee", new_employee_path %></br></b>
+<div style="text-align:center">
+<b><%= link_to "Go to titles", titles_path ,class:"btn btn-secondary btn-sm" %>          ||</b>
+<b><%= link_to "Departments", departments_path, class:"btn btn-secondary btn-sm" %>          ||</b>
+<b><%= link_to "Departments Employees", dept_emps_path, class:"btn btn-secondary btn-sm" %>          ||</b>
+<b><%= link_to "Department Managers", dept_managers_path, class:"btn btn-secondary btn-sm" %>          ||</b>
+<b><%= link_to "Salaries", salaries_path, class:"btn btn-secondary btn-sm" %>          ||</b>
+</div>
+<h2 style="text-align:center; color:navy; font-weight:bolder">List of Employees</h2>
 
-<div id="employees">
+<b><%= link_to "Add New Employee",  new_employee_path ,class:"btn btn-success" %></br></b>
+
+<div id="employees" style="background-color: bisque;" >
   <% @employees.each do |employee| %>
+  <div style="border-bottom: double;">
     <%= render employee %>
     <p>
-      <%= link_to "View this employee", employee %>
+      <%= link_to "View this employee", employee,class:"btn btn-secondary"%>
     </p>
+  </div>
   <% end %>
 </div>
 

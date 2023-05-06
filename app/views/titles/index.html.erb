@@ -1,14 +1,17 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Titles</h1>
+<h1  style="text-align:center; color:navy;">Titles</h1>
 
-<div id="titles">
+<div id="titles" style="background-color: bisque; " >
   <% @titles.each do |title| %>
+   <div style="border-bottom: double;">
     <%= render title %>
     <p>
-      <%= link_to "Show this title", title %>
+      <%= link_to "Show this title", title ,class:"btn btn-primary"%>
     </p>
+    </div>
   <% end %>
-</div>
 
-<%= link_to "New title", new_title_path %>
+
+<%= link_to "New title", new_title_path, class:"btn btn-success", style:"text-align:center" %>
+  <%= link_to "Back to employees", employees_path,class:"btn btn-secondary" %>
